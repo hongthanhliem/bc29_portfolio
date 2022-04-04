@@ -1,0 +1,192 @@
+/* header */
+header{
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.navbar-brand i{
+    color:green;
+}
+
+
+.navbar-brand span{
+    font-size: 30px;
+}
+
+.navbar-nav .nav-item{
+    margin: 10px;
+}
+
+
+.navbar-nav .nav-item::after{
+    content: "";
+    
+    width: 0;
+    display: block;
+    height: 5px;
+    background-color: green;
+    transition: 0.5s;
+}
+
+.navbar-nav .nav-item.active::after{
+    width: 100%;
+}
+
+.navbar-nav .nav-item:hover::after{
+    width: 100%;
+}
+
+.navbar-nav .nav-item.active .nav-link{
+    color: green;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    font-weight: bold;
+}
+
+/* .navbar-nav .nav-item.active a{
+    color: green !important;
+} */
+
+/* carousel */
+
+.carousel-item{
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-caption h3{
+    font-size: 50px;
+}
+
+.carousel-caption p{
+    font-size: 20px;
+}
+
+.carousel-item:nth-child(1){
+    background-image: url("../images/finland.jpg");
+    /* height: 700px;
+    background-position: center;
+    background-size: cover; */
+
+}
+.carousel-item:nth-child(2){
+    background-image: url("../images/mountains.jpg");
+    /* height: 700px;
+    background-position: center;
+    background-size: cover; */
+
+}
+.carousel-item:nth-child(3){
+    background-image: url("../images/mountains-1.jpg");
+    /* height: 700px;
+    background-position: center;
+    background-size: cover; */
+
+}
+
+ .carousel-caption{
+    /* margin-bottom: 10%; */
+    top:50%;
+    transform: translateY(-50%);
+}
+
+/* .img__thumb img{
+    border-radius: 100px;
+    box-sizing: border-box;
+    height: 10%;
+    width: 10%;
+}  */
+
+.img__thumb{
+    width: 150px;
+    margin: auto;
+}
+
+/* project */
+
+/* .project__title{
+    text-align: center;
+} */
+
+
+#feature {
+    background-image: linear-gradient(rgba(7, 12, 7, 0.7), rgba(7, 12, 7, 0.7)),
+        url(../images/3.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 5rem 0;
+    color: white;
+}
+
+.feature__header {
+    margin-bottom: 3rem;
+}
+
+.feature__title {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.feature__item {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.feature__item:hover {
+    border-color: white;
+    background-color: black;
+}
+
+.feature__item i {
+    color: #35a22c;
+    font-size: 48px;
+    margin-bottom: 1.2rem;
+}
+
+.feature__item h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#award {
+    padding: 3rem 0;
+    position: relative;
+}
+
+.award__bg {
+    background-image: url("../images/memphis_3.png");
+    background-position: left bottom;
+    background-size: 50%;
+    background-repeat: no-repeat;
+
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.award__left {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 30%);
+    border-radius: 8px;
+    padding: 2.5rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+}
+
+.award__left h2 {
+    font-weight: 700;
+}
+
